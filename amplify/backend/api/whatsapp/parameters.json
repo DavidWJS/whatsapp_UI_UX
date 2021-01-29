@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "whatsapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authwhatsapp8082581e",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
